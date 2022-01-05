@@ -7,13 +7,13 @@ node {
 
 			}
 		}
-		stage(Test){
+		stage(test){
 			steps{
 				echo"Test"
 
 			}
 		}
-		stage(Integration Test){
+		stage(integrationtest){
 			steps{
 				echo"Integration Test"
 

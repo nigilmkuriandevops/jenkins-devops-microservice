@@ -1,25 +1,20 @@
 node {
-	agnets any
-	stages{
-		stage('Build'){
-			steps{
-				echo"Build"
-
-			}
-		}
-		stage('Test'){
-			steps{
-				echo"Test"
-
-			}
-		}
-		stage('Integration Test'){
-			steps{
-				echo"Integration Test"
-
-			}
-		}
-	} 
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                echo "Build"
+            }
+		stage('Test') {
+            steps {
+                echo "Test"
+            }
+		stage('Integrationtest') {
+            steps {
+                echo "Integration test"
+            }		
+        }
+    }
 	post{
 		always{
 			echo 'Im awesome. I run always'
@@ -31,8 +26,8 @@ node {
 			echo 'I run when you fail'
 		}
 	}
-
 }
+
 
 
 

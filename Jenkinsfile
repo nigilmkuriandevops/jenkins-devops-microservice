@@ -5,10 +5,12 @@ node {
             steps {
                 echo "Build"
             }
+		}
 		stage('Test') {
             steps {
                 echo "Test"
             }
+		}
 		stage('Integrationtest') {
             steps {
                 echo "Integration test"
